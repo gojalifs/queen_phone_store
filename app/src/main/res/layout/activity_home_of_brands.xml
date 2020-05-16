@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product.samsung.Samsung_Activity">
+
+    <ImageView
+        android:id="@+id/image_grid_home_"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:contentDescription="company_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        tools:src="@android:color/darker_gray" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_brand_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nyobatext"
+        tools:listitem="@layout/home_brand" />
+
+    <TextView
+        android:id="@+id/tv_nyobatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_grid_home_"
+        tools:text="disini untuk percobaan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
